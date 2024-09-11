@@ -1,0 +1,181 @@
+@use "_fonts"
+@import "_variables"
+
+body
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    background-color: $Stone100
+    padding-bottom: 7px
+
+main
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+article
+    background-color: $White
+    max-width: 375px
+
+    .image
+        max-height: 171px
+        img
+            height: 100%
+            width: 100%
+            object-fit: fill
+    
+.article__container
+    padding: 40px 32px
+
+    header
+
+        h1
+            color: $Stone900
+            @include mobile-text-preset-1
+            text-transform: capitalize
+            margin-top: 40px
+        
+        p   
+            margin-top: 24px
+            @include text-preset-4
+    
+    .time
+        margin-top: 32px
+        padding: 24px
+        background-color: $Rose50
+
+        h2
+            color: $Rose800
+            @include text-preset-3
+
+        .time__list
+            margin-top: 16px
+            padding-left: 24px
+            color: $Stone600
+
+            .time__item
+                padding-left: 16px
+                @include text-preset-4
+
+                &::marker
+                    color: $Brown800
+
+            .time__item + .time__item
+                margin-top: 8px
+
+            span
+                @include text-preset-4-bold
+
+    h3
+        @include text-preset-2
+        color: $Brown800  
+
+    .ingredients
+        margin-top: 32px
+
+        .ingredients__list
+            margin-top: 24px
+            padding-left: 15px
+            color: $Stone600
+
+            .ingredients__item
+                padding-left: 16px
+                @include text-preset-4
+
+                &::marker
+                    color: $Brown800
+
+            .ingredients__item + .ingredients__item
+                margin-top: 8px
+    
+    .hr
+        height: 1px
+        background-color: $Stone150
+        margin-top: 32px
+
+    .instructions
+        margin-top: 32px
+
+        .instructions__list
+            margin-top: 24px
+            padding-left: 15px
+            color: $Stone600
+
+            .instructions__item
+                padding-left: 16px
+                @include text-preset-4
+
+                &::marker
+                    color: $Brown800
+                    @include text-preset-4-bold
+
+                
+                span
+                    @include text-preset-4-bold
+                    
+            .instructions__item + .instructions__item
+                margin-top: 8px
+
+    .nutrition
+        margin-top: 32px
+
+        p
+            margin-top: 24px
+            color: $Stone600
+            @include text-preset-4
+
+        table
+            margin-top: 24px
+
+            tr
+                border: 1px solid green
+
+                td:first-child
+                    text-transform: capitalize
+                    color: $Stone600
+                    padding-left: 32px
+                    @include text-preset-4
+
+                td:last-child
+                    color: $Brown800
+                    padding-left: 64px
+                    @include text-preset-4-bold
+
+
+footer
+    flex-shrink: 2
+    margin: 7px
+    .attribution 
+        font-size: 11px
+        text-align: center
+        
+        a
+            color: hsl(228, 45%, 44%)
+
+@media screen and (min-width: 768px)
+    main
+        padding: 128px 0
+
+    article
+        max-width: 616px
+
+        .image
+            max-height: 300px
+
+    .article__container
+        padding: 40px
+
+        header
+
+            h1
+                @include text-preset-1
+        
+    
+
+@media screen and (min-width: 1024px)
+    article
+        max-width: 736px
+
+    
