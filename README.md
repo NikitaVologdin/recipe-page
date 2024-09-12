@@ -46,5 +46,5 @@ element+element selector
 
 ## Author
 
-- Website - [Nikita Vologdin](https://vologdin.eu/portfolio)
+- Website - [Nikita Vologdins](https://vologdin.eu/portfolio)
 - Frontend Mentor - [@NikitaVologdin](https://www.frontendmentor.io/profile/NikitaVologdin)
