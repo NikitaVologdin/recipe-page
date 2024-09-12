@@ -121,6 +121,7 @@ article .image img {
 }
 .article__container header p {
   margin-top: 24px;
+  color: hsl(30, 10%, 34%);
   font-size: 1rem;
   line-height: 150%;
   letter-spacing: 0px;
@@ -153,6 +154,7 @@ article .image img {
 }
 .article__container .time .time__list .time__item::marker {
   color: hsl(14, 45%, 36%);
+  font-size: 0.7rem;
 }
 .article__container .time .time__list .time__item + .time__item {
   margin-top: 8px;
@@ -188,6 +190,7 @@ article .image img {
 }
 .article__container .ingredients .ingredients__list .ingredients__item::marker {
   color: hsl(14, 45%, 36%);
+  font-size: 0.7rem;
 }
 .article__container .ingredients .ingredients__list .ingredients__item + .ingredients__item {
   margin-top: 8px;
@@ -202,7 +205,7 @@ article .image img {
 }
 .article__container .instructions .instructions__list {
   margin-top: 24px;
-  padding-left: 15px;
+  padding-left: 25px;
   color: hsl(30, 10%, 34%);
 }
 .article__container .instructions .instructions__list .instructions__item {
@@ -243,9 +246,18 @@ article .image img {
 }
 .article__container .nutrition table {
   margin-top: 24px;
+  width: 100%;
 }
 .article__container .nutrition table tr {
-  border: 1px solid green;
+  display: flex;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 12px;
+}
+.article__container .nutrition table tr:last-child {
+  border: 0;
+}
+.article__container .nutrition table tr td {
+  width: 100%;
 }
 .article__container .nutrition table tr td:first-child {
   text-transform: capitalize;
@@ -258,12 +270,14 @@ article .image img {
 }
 .article__container .nutrition table tr td:last-child {
   color: hsl(14, 45%, 36%);
-  padding-left: 64px;
   font-size: 1rem;
   line-height: 150%;
   letter-spacing: 0px;
   font-family: "Outfit", sans-serif;
   font-weight: 700;
+}
+.article__container .nutrition table tr + tr {
+  padding-top: 12px;
 }
 
 footer {
@@ -287,6 +301,7 @@ footer .attribution a {
   }
   article .image {
     max-height: 300px;
+    padding: 40px 40px 40px;
   }
   .article__container {
     padding: 40px;
