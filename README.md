@@ -12,6 +12,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -38,11 +39,15 @@ This project involved creating a recipe page with responsive design, custom styl
 
 element+element selector
 ::marker pseudo-element
+purpose of strong element
+th element for table
 
 ### Useful resources
 
 - [element+element](https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator) - This helped me find way make margins for list items without nth child. I really liked this pattern and will use it going forward.
 - [::marker](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker) - This is an amazing article which helped me finally understand Ul, Ol styling. I'd recommend it to anyone still learning this concept.
+- [th](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th#result_2) - This is documentation on TH. I'd recommend it to anyone still learning tables.
+- [strong, em](https://serpstat.com/blog/how-to-use-html-tags-strong-b-em-i-and-how-they-differ/#:~:text=%E2%80%94%20semantic%20formatting%20tag,attach%20much%20importance%20to%20it.) - This is great article which explains purpose of strong and em tags.
 
 ## Author
 

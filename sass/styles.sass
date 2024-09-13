@@ -21,10 +21,6 @@ article
 
     .image
         max-height: 171px
-        img
-            height: 100%
-            width: 100%
-            object-fit: fill
     
 .article__container
     padding: 40px 32px
@@ -35,7 +31,6 @@ article
             color: $Stone900
             @include mobile-text-preset-1
             text-transform: capitalize
-            margin-top: 40px
         
         p   
             margin-top: 24px
@@ -143,17 +138,19 @@ article
                     border: 0
 
 
-                td
+                td, th
                     width: 100%
 
-                td:first-child
+                th
                     text-transform: capitalize
+                    text-align: left
+                    font-weight: 500
                     color: $Stone600
                     padding-left: 32px
                     @include text-preset-4
 
 
-                td:last-child
+                td
                     color: $Brown800
                     @include text-preset-4-bold
             
@@ -179,10 +176,15 @@ footer
 
     article
         max-width: 616px
+        border-radius: 24px
+
 
         .image
             max-height: 300px
             padding: 40px 40px 40px
+
+            img
+                border-radius: 12px
 
     .article__container
         padding: 40px
@@ -197,4 +199,12 @@ footer
 @media screen and (min-width: 1024px)
     article
         max-width: 736px
+    
+    .article__container
+        padding: 40px
+
+        header
+
+            h1
+                margin-top: 40px
 
